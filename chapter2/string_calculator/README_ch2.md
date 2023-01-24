@@ -13,4 +13,6 @@
 - [x] 전달하는 문자 구분자로 분리하여 숫자로 변환 `getSplitedInts(String)`
 - [x] 숫자 덧셈 `addAll(int[])`
 - [x] 음수 예외처리 `isBiggerThan0(int)`
-- [ ] 커스텀 구분자 설정 ``
+- [x] 커스텀 구분자 설정
+  - `getSplitedInts` 오버로딩
+  - `stringSum` 함수 분기점
