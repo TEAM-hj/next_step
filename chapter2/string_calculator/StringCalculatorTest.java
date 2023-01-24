@@ -42,4 +42,20 @@ class StringCalculatorTest {
         });
     }
 
+    @Test
+    void 숫자열배열덧셈테스트_쉼표() {
+        String testInput = "3,4,5,6,7";
+        int[] splitedInts = scal.getSplitedInts(testInput);
+        int i = scal.addAll(splitedInts);
+        assertEquals(25, i);
+    }
+
+    @Test
+    void 숫자열배열덧셈테스트_콜론() {
+        String testInput = "3:4:5:6:7";
+        int[] splitedInts = scal.getSplitedInts(testInput);
+        int i = scal.addAll(splitedInts);
+        assertEquals(25, i);
+    }
+
 }
