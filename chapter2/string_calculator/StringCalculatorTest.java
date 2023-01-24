@@ -58,4 +58,18 @@ class StringCalculatorTest {
         assertEquals(25, i);
     }
 
+    @Test
+    void 커스텀구분자테스트1() {
+        String testInput = "//./\n3.2.0";
+        int result= scal.stringSum(testInput);
+        assertEquals(5, result);
+    }
+
+    @Test
+    void 커스텀구분자테스트2() {
+        String testInput = "//?/\n3?2?0";
+        int result = scal.stringSum(testInput);
+        assertEquals(5, result);
+    }
+
 }
