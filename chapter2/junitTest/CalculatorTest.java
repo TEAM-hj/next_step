@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2.junitTest;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

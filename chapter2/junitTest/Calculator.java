@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2.junitTest;
 
 public class Calculator {
     int add(int i, int j) {
