@@ -14,8 +14,8 @@ public class StringCalculator {
         int idx = 0;
 
         for (String numberStr : splitedStr) {
-            if (isBiggerThan0(Integer.parseInt(numberStr))) {
-                result[idx++] = Integer.parseInt(numberStr);
+            if (isBiggerThan0(Integer.parseInt(numberStr.trim()))) {
+                result[idx++] = Integer.parseInt(numberStr.trim());
             } else if (numberStr.charAt(0)=='-'){
                 throw new RuntimeException("음수입력");
             }
