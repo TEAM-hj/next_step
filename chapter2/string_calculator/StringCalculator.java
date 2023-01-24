@@ -35,21 +35,17 @@ public class StringCalculator {
         int idx = 0;
 
         for (String numberStr : splitedStr) {
-            if (isBiggerThan0(Integer.parseInt(numberStr.trim()))) {
-                result[idx++] = Integer.parseInt(numberStr.trim());
-            } else if (numberStr.charAt(0)=='-'){
-                throw new RuntimeException("음수입력");
-            }
+            isBiggerThan0(Integer.parseInt(numberStr.trim()));
+            result[idx++] = Integer.parseInt(numberStr.trim());
         }
 
         return Arrays.copyOfRange(result, 0,idx);
     }
 
-    private boolean isBiggerThan0(int num) {
+    private void isBiggerThan0(int num) {
         if (num<0) {
             throw new RuntimeException("음수 입력입니다.");
         }
-        return num >= 0;
     }
 
     public int addAll(int[] ints) {

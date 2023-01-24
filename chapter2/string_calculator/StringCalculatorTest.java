@@ -72,4 +72,18 @@ class StringCalculatorTest {
         assertEquals(5, result);
     }
 
+    @Test
+    void 입력_0시() {
+        String testInput = "0";
+        int result = scal.stringSum(testInput);
+        assertEquals(0, result);
+    }
+
+    @Test
+    void 숫자1개() {
+        String testInput = "1";
+        int result = scal.stringSum(testInput);
+        assertEquals(1, result);
+    }
+
 }
